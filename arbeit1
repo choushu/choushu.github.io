@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <!--head-Bereich-->
+  <head>
+  <!--CSS und Scripts einbinden-->
+      <link rel="stylesheet" type="text/css" href="./css/style.css">
+      <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <!--Meta Angaben-->
+      <meta name="language" content="de">
+      <meta charset="utf-8"/>
+      <meta name="keywords" content="Suchbegriffe">
+      <meta name="description" content="Beschreibung">
+    </head>
+  <body>
+    <!-- Start des Kopfbereiches-->
+    <header>
+    <!-- Navigation -->
+        <nav>
+          <ul>
+            <li><a href="index.html#about">Home</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#cv">CV</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="index.html#about">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Anfang der Hauptsektion "main" -->
+      <main>
+        <div id="wrapper" class="detailseite">
+        <h1>Design</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+           eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+           diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+           Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+           dolor sit amet.
+        </p>
+        <img class="img-links" src="./img/portfolio/hair.jpg">
+        <img class="img-rechts" src="./img/portfolio/sunglasses.jpg">
+        <img class="img-links" src="./img/portfolio/gianna.jpg">
+        <img class="img-rechts" src="./img/portfolio/cole.jpg">
+      <div class="back">
+      <a href="index.html#portfolio">zurück zur Übersicht</a>
+    </div>
+  </div>
+</main>
+</body>
+</html>
