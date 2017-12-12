@@ -1,0 +1,391 @@
+/* navigation */
+
+nav ul{
+  text-align: center; /*bewirkt eine mittige textausrichtung*/
+  margin: 0; /*entfernt stardartisierte Aussenabstände..*/
+  background-color: #A4AC96;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  width: 100%;
+  padding: 0;
+}
+
+nav li {
+  display: inline; /* sorgt dafür, dass alle li-elemente nebeneinder dargestellt
+  werden*/
+}
+
+nav a {
+  display: inline-block; /*macht das jedes der a-elementein der navigation...*/
+  color: #FFFFFF; /*textfarbe innerhalb der navigation*/
+  font-size: 20px; /*schriftgrösse*/
+  font-family: Avenir Next, sans-serif;
+  padding: 20px 15px; /*innenabstand*/
+  text-decoration: none; /*entfert browser standart*/
+  font-weight:600; /*setzt die schriftdicke auf semibold*/
+}
+
+
+/* about me*/
+
+#about {
+display: flex;
+}
+#portrait {
+  width: 80%;
+  position: relative;
+}
+#portrait_image {
+  background-size: cover; /* dafür dass das Bild das Element komplet ausfüllt*/
+  background-image: url("../img/Shushu.jpg"); /*quelle des Bildes*/
+  background-position: center; /*wie das bild positioniert wird*/
+position: absolute;
+height: 100%;
+width: 100%;
+}
+p {
+  font-size: 18px;
+}
+#beschreibung{
+  width: 90%;
+  background:#857F74;
+}
+#name {min-height:200px;
+margin: 5;
+color: #857F74;
+padding: 0%;
+background:#ffffff;
+font-size: 1em;
+}
+
+#details {
+  color:#efefef;
+  background:#857F74;
+  min-height: 100px;
+  padding: 5%;
+  font-size: 16px;
+}
+
+body {
+  font-size: 16px;
+  font-family: Avenir, sans-serif;
+  line-height: 21px;
+  color: #999999;
+}
+a {
+  color: #4F000B;
+  text-decoration: none;
+}
+
+#beschreibung h1 {
+color: #857F74;
+line-height: 100%;
+text-transform: uppercase;
+margin-left: 5%;
+margin-top: 10%;
+}
+#beschreibung span {
+  color: #595358;
+  font-size: 16px;
+  margin-left: 5%;
+  font-weight: bold;
+
+}
+
+#beschreibung p {
+  color: #595358;
+  font-size: 16px;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  padding-bottom: 5%;
+  }
+
+  /* Skills Section */
+#wrapper {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#wrapper h1 {
+  text-align: center;
+  line-height: 4em;
+  font-size: 50px;
+  font-family: Avenir;
+  color: #595358;
+}
+
+.skills-icons{
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 10%;
+}
+
+#erstes-icon, #zweites-icon, #drittes-icon {
+  height: 300px;
+  width: 33.333%;
+  text-align: center;
+  font-weight: bold;
+
+}
+#erstes-icon {
+  background: url("../img/tea.svg") 50% 50% no-repeat;
+}
+
+#zweites-icon {
+  background: url("../img/art.svg") 50% 50% no-repeat;
+}
+
+#drittes-icon {
+  background: url("../img/pizza.svg") 50% 50% no-repeat;
+}
+
+/* Lebenslauf Section*/
+#cv, #jobs, #ausbildungen {
+  float: left;
+}
+.cv-eintrag {
+  width: 100%;
+  float: left;
+  color: #857F74;
+}
+.cv-eintrag img {
+  vertical-align: middle;
+  margin-right: 15px;
+  color: #857F74;
+}
+.links p {
+  display: inline-block;
+  padding: 15px;
+}
+.links {
+  float: left;
+}
+.rechts {
+  width: 80%;
+  vertical-align: top;
+  float: right;
+}
+.cv-titel {
+  font-size: 1.2em;
+  line-height: 1em;
+  font-weight: bold;
+  color: #857F74;
+}
+.cv-beschreibung {
+  padding: 0 15px 15px 15px;
+
+}
+
+#career h1 {
+  color: #595358;
+  margin-top: -10%;
+}
+
+#education h1 {
+  color: #595358;
+}
+
+/* section porfolio*/
+#portfolio {
+  float: left;
+}
+.portfolio-kacheln {
+  display: flex;
+  flex-flow: row wrap;
+}
+.portfolio-eintrag {
+  position: relative;
+  width: 33.3333%;
+}
+.portfolio-eintrag img {
+  width: 100%;
+  display: block;
+}
+.portfolio-eintrag .arbeit-titel {
+  background: rgba(121, 121, 121, 0.75);
+  height: 100%;
+  color: white;
+  padding: 45% 0;
+  position: absolute;
+
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  visibility: hidden;
+}
+
+.portfolio-eintrag:hover .arbeit-titel {
+  visibility: visible;
+}
+
+/*Detailseite */
+img.img-links {
+  width: 48%;
+  float:left;
+  margin: 0 4% 4% 0;
+}
+img.img-rechts {
+  width: 48%;
+  margin: 0 0 4% 0;
+}
+.back {
+  width: 100%;
+  text-align: center;
+  height: 4em;
+}
+
+nav a:hover {
+  color: #CADF9E;
+  cursor: pointer;
+}
+
+/* Kontaktformular */
+#formular {
+  clear: both; /* floating aufheben */
+}
+.kontaktformular{
+  width: 70%;
+  margin: 0 auto;
+}
+.form-control, textarea {
+  padding: 2%;
+  width: 100%;
+  margin: 2%;
+}
+.absenden {
+  padding: 2%;
+  width: 104%;
+  margin: 2%;
+  background: #857F74;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+.absenden:hover {
+  background: #857F74;
+}
+
+/* footer */
+footer {
+  background: #A4AC96;
+  color: white;
+  padding: 2% 0%;
+  margin: 2% 0 0 0;
+  text-align: center;
+}
+
+#hamburger {
+  display: none;
+}
+
+/* Mediaqueries bis 690px */
+@media only screen and (max-width: 960px) {
+  #about {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  #beschreibung {
+    width: 100%;
+  }
+  #portrait {
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+  #erstes-icon, #zweites-icon, #drittes-icon {
+    width: 100%;
+  }
+
+  #portrait_image {
+    margin-top: 61px;
+  }
+
+  section#cv {
+    padding: 0 5%;
+  }
+  .links {
+    width: 100%;
+    text-align: center;
+  }
+  .rechts {
+    width: 100%;
+  }
+  .cv-eintrag img {
+    position: center;
+  }
+  .links p {
+    padding: 15px;
+    display: block;
+  }
+  .jahr {
+    display: inline;
+  }
+}
+/* Mediaqueries unter 480px */
+@media only screen and (max-width: 480px) {
+  body {
+		margin-top: 59px;
+	}
+
+	nav li {
+		display: block;
+		line-height: 0.1em;
+	}
+
+	ul {
+    transform: translate(0%, 0%);
+    margin: 0;
+    padding: 0;
+    transform: translate(0%, -285px);
+    transition: 1s;
+	}
+
+	ul.active {
+		transform: translate(0%, 58px);
+	}
+
+
+
+	.mobile-menu-bar {
+		position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    background-color: #343434;
+    z-index: 200;
+	}
+
+  #portrait_image {
+    margin: 0;
+  }
+
+	.hamburger-inner, .hamburger-inner:before, .hamburger-inner:after {
+		background-color: #FFFFFF;
+	}
+
+	#hamburger {
+		display: inline;
+		float: right;
+	}
+
+	#portrait {
+		margin-top: 0px;
+	}
+
+	a.scroll {
+		width: 100%;
+	}
+
+	main {
+		padding: 0;
+	}
+
+	.portfolio-eintrag {
+		margin: 0 auto;
+		text-align: center;
+		width: 100%;
+	}
+  }
